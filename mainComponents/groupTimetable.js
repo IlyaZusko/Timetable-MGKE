@@ -7,88 +7,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Mon from '../DaysTimetable/Mon.js';
 import Tuesday from '../DaysTimetable/Tuesday.js';
+import Wed from '../DaysTimetable/Wed.js';
+import Thu from '../DaysTimetable/Thu.js';
+import Fri from '../DaysTimetable/Fri.js';
+import Sat from '../DaysTimetable/Sat.js';
 
 const Tab = createBottomTabNavigator();
-
-
-// function TimeTableDaysTabs() {
-//     return (
-//       <Tab.Navigator tabBarOptions={{ showLabel: false }}>
-//         <Tab.Screen 
-//           name="Mon"
-//           component={Mon}
-//           options={{
-//             headerShown: false,
-//             tabBarStyle: {
-//               backgroundColor: "grey",
-//               position: "absolute",
-//               bottom: 28,
-//               right: 20,
-//               left: 20,
-//               borderRadius: 14,
-//               borderTopWidth: 0,
-//               height: 60,
-//               shadowColor: "#000",
-//               shadowOpacity: 0.15,
-//               shadowOffset: {
-//                 top: 0,
-//               },
-//             },
-//             tabBarIcon: ({ focused }) => (
-//               <View
-//                 style={{
-//                   position: "absolute",
-//                   top: "50%",
-//                 }}
-//               >
-//                 <Feather
-//                   name="home"
-//                   size={24}
-//                   color={focused ? "#F58B61" : "#CECECE"}
-//                 />
-//               </View>
-//             ),
-//           }}
-//         ></Tab.Screen>
-//         <Tab.Screen 
-//           name="Tuesday"
-//           component={Tuesday}
-//           options={{
-//             headerShown: false,
-//             tabBarStyle: {
-//               backgroundColor: "#FFFFFF",
-//               position: "absolute",
-//               bottom: 28,
-//               right: 20,
-//               left: 20,
-//               borderRadius: 14,
-//               borderTopWidth: 0,
-//               height: 60,
-//               shadowColor: "#000",
-//               shadowOpacity: 0.15,
-//               shadowOffset: {
-//                 top: 0,
-//               },
-//             },
-//             tabBarIcon: ({ focused }) => (
-//               <View
-//                 style={{
-//                   position: "absolute",
-//                   top: "50%",
-//                 }}
-//               >
-//                 <Feather
-//                   name="home"
-//                   size={24}
-//                   color={focused ? "#F58B61" : "#CECECE"}
-//                 />
-//               </View>
-//             ),
-//           }}
-//         ></Tab.Screen>
-//       </Tab.Navigator>
-//     );
-//   }
 
 export default function Settings({ navigation }) {
 
@@ -130,16 +54,204 @@ export default function Settings({ navigation }) {
             </View>
 
             <NavigationContainer independent={true}>
-                <Tab.Navigator>
+                <Tab.Navigator tabBarOptions={{ showLabel: false }}>
                     <Tab.Screen
                         name="Mon"
                         component={Mon}
-                        options={{ headerShown: false }}
+                        options={{
+                            headerShown: false,
+                            tabBarStyle: {
+                              backgroundColor: "#FFFFFF",
+                              position: "absolute",
+                              top: 0,
+                              right: 30,
+                              left: 30,
+                              borderBottomColor: '#CBCBCB',
+                              borderBottomWidth: 1,
+                              borderTopWidth: 0,
+                              height: 50,
+                            //   shadowColor: "#000",
+                            //   shadowOpacity: 0.15,
+                            //   shadowOffset: {
+                            //     top: 0,
+                            //   },
+                            },
+                            tabBarIcon: ({ focused }) => (
+                                <View
+                                  style={{
+                                    position: "absolute",
+                                    top: "70%",
+                                  }}
+                                >
+                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Пн.</Text>
+                                </View>
+                              ),
+                        }}
                     ></Tab.Screen>
                     <Tab.Screen
                         name="Tuesday"
                         component={Tuesday}
-                        options={{ headerShown: false }}
+                        options={{
+                            headerShown: false,
+                            tabBarStyle: {
+                              backgroundColor: "#FFFFFF",
+                              position: "absolute",
+                              top: 0,
+                              right: 30,
+                              left: 30,
+                              borderBottomColor: '#CBCBCB',
+                              borderBottomWidth: 1,
+                              borderTopWidth: 0,
+                              height: 50,
+                            //   shadowColor: "#000",
+                            //   shadowOpacity: 0.15,
+                            //   shadowOffset: {
+                            //     top: 0,
+                            //   },
+                            },
+                            tabBarIcon: ({ focused }) => (
+                                <View
+                                  style={{
+                                    position: "absolute",
+                                    top: "70%",
+                                  }}
+                                >
+                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Вт.</Text>
+                                </View>
+                              ),
+                        }}
+                    ></Tab.Screen>
+                    <Tab.Screen
+                        name="Wed"
+                        component={Wed}
+                        options={{
+                            headerShown: false,
+                            tabBarStyle: {
+                              backgroundColor: "#FFFFFF",
+                              position: "absolute",
+                              top: 0,
+                              right: 30,
+                              left: 30,
+                              borderBottomColor: '#CBCBCB',
+                              borderBottomWidth: 1,
+                              borderTopWidth: 0,
+                              height: 50,
+                            //   shadowColor: "#000",
+                            //   shadowOpacity: 0.15,
+                            //   shadowOffset: {
+                            //     top: 0,
+                            //   },
+                            },
+                            tabBarIcon: ({ focused }) => (
+                                <View
+                                  style={{
+                                    position: "absolute",
+                                    top: "70%",
+                                  }}
+                                >
+                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Ср.</Text>
+                                </View>
+                              ),
+                        }}
+                    ></Tab.Screen>
+                    <Tab.Screen
+                        name="Thu"
+                        component={Thu}
+                        options={{
+                            headerShown: false,
+                            tabBarStyle: {
+                              backgroundColor: "#FFFFFF",
+                              position: "absolute",
+                              top: 0,
+                              right: 30,
+                              left: 30,
+                              borderBottomColor: '#CBCBCB',
+                              borderBottomWidth: 1,
+                              borderTopWidth: 0,
+                              height: 50,
+                            //   shadowColor: "#000",
+                            //   shadowOpacity: 0.15,
+                            //   shadowOffset: {
+                            //     top: 0,
+                            //   },
+                            },
+                            tabBarIcon: ({ focused }) => (
+                                <View
+                                  style={{
+                                    position: "absolute",
+                                    top: "70%",
+                                  }}
+                                >
+                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Чт.</Text>
+                                </View>
+                              ),
+                        }}
+                    ></Tab.Screen>
+                    <Tab.Screen
+                        name="Fri"
+                        component={Fri}
+                        options={{
+                            headerShown: false,
+                            tabBarStyle: {
+                              backgroundColor: "#FFFFFF",
+                              position: "absolute",
+                              top: 0,
+                              right: 30,
+                              left: 30,
+                              borderBottomColor: '#CBCBCB',
+                              borderBottomWidth: 1,
+                              borderTopWidth: 0,
+                              height: 50,
+                            //   shadowColor: "#000",
+                            //   shadowOpacity: 0.15,
+                            //   shadowOffset: {
+                            //     top: 0,
+                            //   },
+                            },
+                            tabBarIcon: ({ focused }) => (
+                                <View
+                                  style={{
+                                    position: "absolute",
+                                    top: "70%",
+                                  }}
+                                >
+                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Пт.</Text>
+                                </View>
+                              ),
+                        }}
+                    ></Tab.Screen>
+                    <Tab.Screen
+                        name="Sat"
+                        component={Sat}
+                        options={{
+                            headerShown: false,
+                            tabBarStyle: {
+                              backgroundColor: "#FFFFFF",
+                              position: "absolute",
+                              top: 0,
+                              right: 30,
+                              left: 30,
+                              borderBottomColor: '#CBCBCB',
+                              borderBottomWidth: 1,
+                              borderTopWidth: 0,
+                              height: 50,
+                            //   shadowColor: "#000",
+                            //   shadowOpacity: 0.15,
+                            //   shadowOffset: {
+                            //     top: 0,
+                            //   },
+                            },
+                            tabBarIcon: ({ focused }) => (
+                                <View
+                                  style={{
+                                    position: "absolute",
+                                    top: "70%",
+                                  }}
+                                >
+                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Сб.</Text>
+                                </View>
+                              ),
+                        }}
                     ></Tab.Screen>
                 </Tab.Navigator>
             </NavigationContainer>

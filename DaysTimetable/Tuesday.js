@@ -17,7 +17,7 @@ export default function Settings({ navigation }) {
                         marginTop: 20
 
                     }}>
-                        Мы упорно трудимся над разработкой этого раздела. Мы оповестим вас когда всё будет готово!
+                        Вторник!
                     </Text>
             </View>
             

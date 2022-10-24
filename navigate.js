@@ -18,87 +18,8 @@ import { Feather } from "@expo/vector-icons";
 import { Dimensions } from "react-native";
 
 const Tab = createBottomTabNavigator();
-const secondTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-// function TimeTableDaysTabs() {
-//   return (
-//     <Tab.Navigator tabBarOptions={{ showLabel: false }}>
-//       <Tab.Screen 
-//         name="Mon"
-//         component={Mon}
-//         options={{
-//           headerShown: false,
-//           tabBarStyle: {
-//             backgroundColor: "grey",
-//             position: "absolute",
-//             bottom: 28,
-//             right: 20,
-//             left: 20,
-//             borderRadius: 14,
-//             borderTopWidth: 0,
-//             height: 60,
-//             shadowColor: "#000",
-//             shadowOpacity: 0.15,
-//             shadowOffset: {
-//               top: 0,
-//             },
-//           },
-//           tabBarIcon: ({ focused }) => (
-//             <View
-//               style={{
-//                 position: "absolute",
-//                 top: "50%",
-//               }}
-//             >
-//               <Feather
-//                 name="home"
-//                 size={24}
-//                 color={focused ? "#F58B61" : "#CECECE"}
-//               />
-//             </View>
-//           ),
-//         }}
-//       ></Tab.Screen>
-//       {/* <Tab.Screen 
-//         name="Tue"
-//         component={Tue}
-//         options={{
-//           headerShown: false,
-//           tabBarStyle: {
-//             backgroundColor: "#FFFFFF",
-//             position: "absolute",
-//             bottom: 28,
-//             right: 20,
-//             left: 20,
-//             borderRadius: 14,
-//             borderTopWidth: 0,
-//             height: 60,
-//             shadowColor: "#000",
-//             shadowOpacity: 0.15,
-//             shadowOffset: {
-//               top: 0,
-//             },
-//           },
-//           tabBarIcon: ({ focused }) => (
-//             <View
-//               style={{
-//                 position: "absolute",
-//                 top: "50%",
-//               }}
-//             >
-//               <Feather
-//                 name="home"
-//                 size={24}
-//                 color={focused ? "#F58B61" : "#CECECE"}
-//               />
-//             </View>
-//           ),
-//         }}
-//       ></Tab.Screen> */}
-//     </Tab.Navigator>
-//   );
-// }
 
 function MainScreenWithTabs() {
   return (
