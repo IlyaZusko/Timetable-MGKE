@@ -67,7 +67,7 @@ export default function Settings({ navigation }) {
                               right: 30,
                               left: 30,
                               borderBottomColor: '#CBCBCB',
-                              borderBottomWidth: 1,
+                            //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
                             //   shadowColor: "#000",
@@ -80,10 +80,12 @@ export default function Settings({ navigation }) {
                                 <View
                                   style={{
                                     position: "absolute",
-                                    top: "70%",
+                                    top: "26%",
                                   }}
                                 >
-                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Пн.</Text>
+                                    <View style={{borderWidth: 2, height: 36, width: 36, borderRadius: 5, alignItems: 'center'}} borderColor={focused ? "#F58B61" : "#CECECE"} >
+                                    <Text style={[focused ? styles.noFocus : styles.onFocus]} >Пн</Text>
+                                    </View>
                                 </View>
                               ),
                         }}
@@ -100,7 +102,7 @@ export default function Settings({ navigation }) {
                               right: 30,
                               left: 30,
                               borderBottomColor: '#CBCBCB',
-                              borderBottomWidth: 1,
+                            //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
                             //   shadowColor: "#000",
@@ -113,10 +115,12 @@ export default function Settings({ navigation }) {
                                 <View
                                   style={{
                                     position: "absolute",
-                                    top: "70%",
+                                    top: "26%",
                                   }}
                                 >
-                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Вт.</Text>
+                                    <View style={{borderWidth: 2, height: 36, width: 36, borderRadius: 5, alignItems: 'center'}} borderColor={focused ? "#F58B61" : "#CECECE"} >
+                                    <Text style={[focused ? styles.noFocus : styles.onFocus]} >Вт</Text>
+                                    </View>
                                 </View>
                               ),
                         }}
@@ -133,7 +137,7 @@ export default function Settings({ navigation }) {
                               right: 30,
                               left: 30,
                               borderBottomColor: '#CBCBCB',
-                              borderBottomWidth: 1,
+                            //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
                             //   shadowColor: "#000",
@@ -146,10 +150,12 @@ export default function Settings({ navigation }) {
                                 <View
                                   style={{
                                     position: "absolute",
-                                    top: "70%",
+                                    top: "26%",
                                   }}
                                 >
-                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Ср.</Text>
+                                    <View style={{borderWidth: 2, height: 36, width: 36, borderRadius: 5, alignItems: 'center'}} borderColor={focused ? "#F58B61" : "#CECECE"} >
+                                    <Text style={[focused ? styles.noFocus : styles.onFocus]} >Ср</Text>
+                                    </View>
                                 </View>
                               ),
                         }}
@@ -166,7 +172,7 @@ export default function Settings({ navigation }) {
                               right: 30,
                               left: 30,
                               borderBottomColor: '#CBCBCB',
-                              borderBottomWidth: 1,
+                            //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
                             //   shadowColor: "#000",
@@ -179,10 +185,12 @@ export default function Settings({ navigation }) {
                                 <View
                                   style={{
                                     position: "absolute",
-                                    top: "70%",
+                                    top: "26%",
                                   }}
                                 >
-                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Чт.</Text>
+                                    <View style={{borderWidth: 2, height: 36, width: 36, borderRadius: 5, alignItems: 'center'}} borderColor={focused ? "#F58B61" : "#CECECE"} >
+                                    <Text style={[focused ? styles.noFocus : styles.onFocus]} >Чт</Text>
+                                    </View>
                                 </View>
                               ),
                         }}
@@ -199,7 +207,7 @@ export default function Settings({ navigation }) {
                               right: 30,
                               left: 30,
                               borderBottomColor: '#CBCBCB',
-                              borderBottomWidth: 1,
+                            //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
                             //   shadowColor: "#000",
@@ -212,10 +220,12 @@ export default function Settings({ navigation }) {
                                 <View
                                   style={{
                                     position: "absolute",
-                                    top: "70%",
+                                    top: "26%",
                                   }}
                                 >
-                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Пт.</Text>
+                                    <View style={{borderWidth: 2, height: 36, width: 36, borderRadius: 5, alignItems: 'center'}} borderColor={focused ? "#F58B61" : "#CECECE"} >
+                                    <Text style={[focused ? styles.noFocus : styles.onFocus]} >Пт</Text>
+                                    </View>
                                 </View>
                               ),
                         }}
@@ -232,7 +242,7 @@ export default function Settings({ navigation }) {
                               right: 30,
                               left: 30,
                               borderBottomColor: '#CBCBCB',
-                              borderBottomWidth: 1,
+                            //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
                             //   shadowColor: "#000",
@@ -245,10 +255,12 @@ export default function Settings({ navigation }) {
                                 <View
                                   style={{
                                     position: "absolute",
-                                    top: "70%",
+                                    top: "26%",
                                   }}
                                 >
-                                    <Text color={focused ? "#F58B61" : "#CECECE"}>Сб.</Text>
+                                    <View style={{borderWidth: 2, height: 36, width: 36, borderRadius: 5, alignItems: 'center'}} borderColor={focused ? "#F58B61" : "#CECECE"} >
+                                    <Text style={[focused ? styles.noFocus : styles.onFocus]} >Сб</Text>
+                                    </View>
                                 </View>
                               ),
                         }}
@@ -267,4 +279,12 @@ const styles = StyleSheet.create({
         marginTop: 54,
         marginLeft: 31,
     },
+    onFocus : {
+        color: '#CECECE', 
+        margin: '20%'
+    },
+    noFocus: {
+        color: '#F58B61',
+        margin: '20%'
+    }
 });
