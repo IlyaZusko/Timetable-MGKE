@@ -4,36 +4,30 @@
             "Понедельник":{
                 "24.10.2022":{
                     "1":{
-                        "lessonName":{},
-                        "teacherName":{},
-                        "typeLesson":{},
-                        "cab":{}
+                        "lessonName": "КПиЯП",
+                        "teacherName": "Леус Ж.В.",
+                        "typeLesson": "Лек",
+                        "cab": "3-212"
                     },
                     "2":{
                         "2.1":{
-                            "lessonName":{},
-                            "teacherName":{},
-                            "typeLesson":{},
-                            "cab":{}
+                            "lessonName": "Тех разр ПО",
+                            "teacherName": "Кулецкая Ю. Н.",
+                            "typeLesson": "ЛР",
+                            "cab": "501"
                         },
                         "2.2":{
-                            "lessonName":{},
-                            "teacherName":{},
-                            "typeLesson":{},
-                            "cab":{}
+                            "lessonName":"ИнЯз Проф",
+                            "teacherName": "Красовская А. В.",
+                            "typeLesson": "ЛР",
+                            "cab": "2-314"
                         }
                     },
                     "3":{
-                        "lessonName":{},
-                        "teacherName":{},
-                        "typeLesson":{},
-                        "cab":{}
-                    },
-                    "4":{
-                        "lessonName":{},
-                        "teacherName":{},
-                        "typeLesson":{},
-                        "cab":{}
+                        "lessonName": "Техн коммун",
+                        "teacherName": "Лихачёва О. П.",
+                        "typeLesson": "Лек",
+                        "cab": "2-109"
                     }
                 }
             },
