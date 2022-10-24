@@ -1,0 +1,47 @@
+{
+    "groups":{
+        "Группа - 41":{
+            "Понедельник":{
+                "24.10.2022":{
+                    "1":{
+                        "lessonName":{},
+                        "teacherName":{},
+                        "typeLesson":{},
+                        "cab":{}
+                    },
+                    "2":{
+                        "2.1":{
+                            "lessonName":{},
+                            "teacherName":{},
+                            "typeLesson":{},
+                            "cab":{}
+                        },
+                        "2.2":{
+                            "lessonName":{},
+                            "teacherName":{},
+                            "typeLesson":{},
+                            "cab":{}
+                        }
+                    },
+                    "3":{
+                        "lessonName":{},
+                        "teacherName":{},
+                        "typeLesson":{},
+                        "cab":{}
+                    },
+                    "4":{
+                        "lessonName":{},
+                        "teacherName":{},
+                        "typeLesson":{},
+                        "cab":{}
+                    }
+                }
+            },
+            "Вторник":{},
+            "Среда":{},
+            "Четверг":{},
+            "Пятница":{},
+            "Суббота":{}
+        }
+    }
+}
