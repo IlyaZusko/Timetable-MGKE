@@ -2,6 +2,93 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, SafeAreaView, View, Image, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'; 
 
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
+import Mon from '../DaysTimetable/Mon.js';
+import Tuesday from '../DaysTimetable/Tuesday.js';
+
+const Tab = createBottomTabNavigator();
+
+
+// function TimeTableDaysTabs() {
+//     return (
+//       <Tab.Navigator tabBarOptions={{ showLabel: false }}>
+//         <Tab.Screen 
+//           name="Mon"
+//           component={Mon}
+//           options={{
+//             headerShown: false,
+//             tabBarStyle: {
+//               backgroundColor: "grey",
+//               position: "absolute",
+//               bottom: 28,
+//               right: 20,
+//               left: 20,
+//               borderRadius: 14,
+//               borderTopWidth: 0,
+//               height: 60,
+//               shadowColor: "#000",
+//               shadowOpacity: 0.15,
+//               shadowOffset: {
+//                 top: 0,
+//               },
+//             },
+//             tabBarIcon: ({ focused }) => (
+//               <View
+//                 style={{
+//                   position: "absolute",
+//                   top: "50%",
+//                 }}
+//               >
+//                 <Feather
+//                   name="home"
+//                   size={24}
+//                   color={focused ? "#F58B61" : "#CECECE"}
+//                 />
+//               </View>
+//             ),
+//           }}
+//         ></Tab.Screen>
+//         <Tab.Screen 
+//           name="Tuesday"
+//           component={Tuesday}
+//           options={{
+//             headerShown: false,
+//             tabBarStyle: {
+//               backgroundColor: "#FFFFFF",
+//               position: "absolute",
+//               bottom: 28,
+//               right: 20,
+//               left: 20,
+//               borderRadius: 14,
+//               borderTopWidth: 0,
+//               height: 60,
+//               shadowColor: "#000",
+//               shadowOpacity: 0.15,
+//               shadowOffset: {
+//                 top: 0,
+//               },
+//             },
+//             tabBarIcon: ({ focused }) => (
+//               <View
+//                 style={{
+//                   position: "absolute",
+//                   top: "50%",
+//                 }}
+//               >
+//                 <Feather
+//                   name="home"
+//                   size={24}
+//                   color={focused ? "#F58B61" : "#CECECE"}
+//                 />
+//               </View>
+//             ),
+//           }}
+//         ></Tab.Screen>
+//       </Tab.Navigator>
+//     );
+//   }
 
 export default function Settings({ navigation }) {
 
@@ -41,7 +128,23 @@ export default function Settings({ navigation }) {
                 </View>
                 <View style={{width: 350, height: 2, backgroundColor: '#F8AE90', borderRadius: '50%', marginTop: 20}}></View>
             </View>
+
+            <NavigationContainer independent={true}>
+                <Tab.Navigator>
+                    <Tab.Screen
+                        name="Mon"
+                        component={Mon}
+                        options={{ headerShown: false }}
+                    ></Tab.Screen>
+                    <Tab.Screen
+                        name="Tuesday"
+                        component={Tuesday}
+                        options={{ headerShown: false }}
+                    ></Tab.Screen>
+                </Tab.Navigator>
+            </NavigationContainer>
         </View>
+
     )
 }
 

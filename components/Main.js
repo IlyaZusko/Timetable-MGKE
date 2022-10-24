@@ -33,7 +33,6 @@ export default function Main({ navigation }) {
                 </View>
                 <View style={styles.bottomLine}></View>
             </View>
-
             <View style={{ width: 350, height: 206, backgroundColor: '#91B3FA', borderRadius: 20, marginRight: 'auto', marginLeft: 'auto', marginTop: 40, position: 'relative' }}>
                 <Image source={require('../assets/img/P1.png')} style={{ width: 300, height: 206, marginRight: 'auto', marginLeft: 'auto' }} />
                 <TouchableOpacity activeOpacity={0.3} style={{ width: 152, height: 165, position: 'absolute', borderRadius: 16, marginTop: 10, marginLeft: 167 }} onPress={loadSceneGroupTimetable} >
