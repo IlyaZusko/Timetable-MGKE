@@ -70,6 +70,7 @@ export default function Settings({ navigation }) {
                             //   borderBottomWidth: 1,
                               borderTopWidth: 0,
                               height: 50,
+                              marginBottom: 30
                             //   shadowColor: "#000",
                             //   shadowOpacity: 0.15,
                             //   shadowOffset: {
